@@ -3,6 +3,15 @@ package frc.robot;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 public abstract class BaseCamera extends Subsystem {
+
+    /*
+     * 
+     * The system will work, so long as all units are in METERS.
+     * Meaning, getLeftX(), getRightX(), getD(), 
+     * AND Constants.TAPE_POINT_DISTANCE must all be in meters!
+     * 
+     */
+
     protected abstract double getLeftX();
     protected abstract double getRightX();
 
